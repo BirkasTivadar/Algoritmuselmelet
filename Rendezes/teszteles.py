@@ -2,8 +2,8 @@ import random
 import time
 
 
-def tesztelo(fuggveny):
-    A = list(range(10000))
+def tesztelo(fuggveny, elemszam):
+    A = list(range(elemszam))
     random.shuffle(A)
 
     print(A)

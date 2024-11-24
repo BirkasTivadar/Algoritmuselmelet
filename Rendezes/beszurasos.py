@@ -12,4 +12,4 @@ def beszurasos(A):
         A[i + 1] = kulcs
 
 
-tesztelo(beszurasos)
+tesztelo(beszurasos, 10000)

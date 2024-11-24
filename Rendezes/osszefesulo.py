@@ -36,4 +36,4 @@ def osszefesules(A):
     osszefesulo(A, 1, len(A))
 
 
-tesztelo(osszefesules)
+tesztelo(osszefesules, 10000)
