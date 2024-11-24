@@ -13,14 +13,15 @@ def beszurasos(A):
 
 
 A = list(range(10000))
-
 random.shuffle(A)
 
 print(A)
+
 start = time.time()
 beszurasos(A)
 end = time.time()
 
 print(A)
+
 print(end-start)
 
