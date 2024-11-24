@@ -1,5 +1,4 @@
-import random
-import time
+from teszteles import tesztelo
 
 
 def beszurasos(A):
@@ -13,15 +12,4 @@ def beszurasos(A):
         A[i + 1] = kulcs
 
 
-A = list(range(10000))
-random.shuffle(A)
-
-print(A)
-
-start = time.time()
-beszurasos(A)
-end = time.time()
-
-print(A)
-
-print(end - start)
+tesztelo(beszurasos)
