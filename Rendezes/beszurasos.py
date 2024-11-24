@@ -1,6 +1,7 @@
 import random
 import time
 
+
 def beszurasos(A):
     for j in range(1, len(A)):
         kulcs = A[j]
@@ -23,5 +24,4 @@ end = time.time()
 
 print(A)
 
-print(end-start)
-
+print(end - start)
