@@ -1,6 +1,5 @@
-import random
 import sys
-import time
+from teszteles import tesztelo
 
 
 def osszefesul(A, p, q, r):
@@ -33,15 +32,8 @@ def osszefesulo(A, p, r):
         osszefesul(A, p, q, r)
 
 
-A = list(range(10000))
-random.shuffle(A)
+def osszefesules(A):
+    osszefesulo(A, 1, len(A))
 
-print(A)
 
-start = time.time()
-osszefesulo(A, 1, len(A))
-end = time.time()
-
-print(A)
-
-print(end - start)
+tesztelo(osszefesules)
