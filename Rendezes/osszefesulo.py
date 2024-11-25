@@ -28,12 +28,21 @@ def osszefesulo(A, p, r):
     if p < r:
         q = (p + r) // 2
         osszefesulo(A, p, q)
+        # print('1', A)
         osszefesulo(A, q + 1, r)
+        # print('2', A)
         osszefesul(A, p, q, r)
+        # print('3', A)
 
 
 def osszefesules(A):
     osszefesulo(A, 1, len(A))
 
-
 tesztelo(osszefesules, 10000)
+
+
+# Feladat
+# A = [8, 11, 5, 10, 2, 1, 9, 6, 7, 4, 3]
+# osszefesules(A)
+
+
