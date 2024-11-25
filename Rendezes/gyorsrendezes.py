@@ -24,4 +24,14 @@ def gyorsrendezo(A):
     gyorsrendezes(A, 0, len(A) - 1)
 
 
-# tesztelo(gyorsrendezo, 10000)
+tesztelo(gyorsrendezo, 10000)
+
+# 1. Feladat
+# A = [8, 2, 1, 5, 6, 9, 4, 3, 7]
+# feloszt(A,0,8)
+# print(A)
+
+# 2. Feladat
+# A = [3, 6, 2, 4, 5, 1]
+# gyorsrendezes(A,0,5)
+# print(A)
