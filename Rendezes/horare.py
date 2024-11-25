@@ -27,4 +27,4 @@ def horareGyorsrendezo(A):
     horareGyorsrendezes(A, 0, len(A) - 1)
 
 
-tesztelo(horareGyorsrendezo, 10)
+tesztelo(horareGyorsrendezo, 10000)
