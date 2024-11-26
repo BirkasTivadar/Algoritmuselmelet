@@ -15,7 +15,6 @@ def maximumKupacol(A, i):
     l = bal(i)
     r = jobb(i)
     kupacmeretA = len(A)
-    # print(A)
 
     if l <= kupacmeretA and A[l] > A[i]:
         legnagyobb = l
