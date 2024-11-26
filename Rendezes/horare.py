@@ -6,9 +6,9 @@ def horareFeloszt(A, p, r):
     i = p
     j = r
     while True:
-        while A[j] < x:
+        while A[j] > x:
             j -= 1
-        while A[i] > x:
+        while A[i] < x:
             i += 1
         if i < j:
             A[i], A[j] = A[j], A[i]
