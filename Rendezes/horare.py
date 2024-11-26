@@ -12,6 +12,7 @@ def horareFeloszt(A, p, r):
             i += 1
         if i < j:
             A[i], A[j] = A[j], A[i]
+            print(A)
         else:
             return j
 
@@ -27,4 +28,8 @@ def horareGyorsrendezo(A):
     horareGyorsrendezes(A, 0, len(A) - 1)
 
 
-tesztelo(horareGyorsrendezo, 10000)
+# tesztelo(horareGyorsrendezo, 10000)
+
+A = [8, 2, 1, 5, 6, 9, 4, 3, 7]
+
+horareFeloszt(A,0,8)
