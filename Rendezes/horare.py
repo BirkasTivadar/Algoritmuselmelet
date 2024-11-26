@@ -32,4 +32,4 @@ def horareGyorsrendezo(A):
 
 A = [8, 2, 1, 5, 6, 9, 4, 3, 7]
 
-horareFeloszt(A,0,8)
+horareFeloszt(A, 0, 8)
