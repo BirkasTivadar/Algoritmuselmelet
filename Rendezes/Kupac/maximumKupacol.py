@@ -1,13 +1,4 @@
-def szulo(i):
-    return i // 2
-
-
-def bal(i):
-    return 2 * i
-
-
-def jobb(i):
-    return (2 * i) + 1
+from kupac import *
 
 
 def maximumKupacol(A, i):
@@ -23,7 +14,7 @@ def maximumKupacol(A, i):
     else:
         legnagyobb = i
 
-    if r <= kupacmeretA and A[r] > A[legnagyobb]:
+    if r < kupacmeretA and A[r] > A[legnagyobb]:
         legnagyobb = r
 
     if legnagyobb != i:
@@ -31,7 +22,7 @@ def maximumKupacol(A, i):
         maximumKupacol(A, legnagyobb + 1)
 
 
-A = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
-
-maximumKupacol(A, 3)
-print(A)
+# A = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
+#
+# maximumKupacol(A, 3)
+# print(A)
