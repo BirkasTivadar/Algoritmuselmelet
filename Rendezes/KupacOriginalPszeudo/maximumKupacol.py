@@ -21,8 +21,8 @@ def maximumKupacol(A, i):
 
 
 # A = [None, 16, 4, 10, 14, 7, 9, 3, 2, 8, 1]
-A = [None, 27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
-
-maximumKupacol(A, 3)
+# A = [None, 27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
+#
+# maximumKupacol(A, 3)
 
 print(A)
