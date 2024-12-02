@@ -25,4 +25,4 @@ def maximumKupacol(A, i):
 #
 # maximumKupacol(A, 3)
 
-print(A)
+# print(A)
