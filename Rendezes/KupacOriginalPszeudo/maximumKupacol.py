@@ -1,23 +1,23 @@
 from kupac import *
 
 
-def maximumKupacol(A, i):
+def maximumKupacol(A, i, kupacmeretA):
     l = bal(i)
     r = jobb(i)
-    print("i:", i, "l:", l, "r:", r)
-    kupacMeretA = len(A) - 1
-    if l <= kupacMeretA and A[l] > A[i]:
+    # print("i:", i, "l:", l, "r:", r)
+    # kupacMeretA = len(A) - 1
+    if l <= kupacmeretA and A[l] > A[i]:
         legnagyobb = l
     else:
         legnagyobb = i
 
-    if r <= kupacMeretA and A[r] > A[legnagyobb]:
+    if r <= kupacmeretA and A[r] > A[legnagyobb]:
         legnagyobb = r
 
-    print("LEG1:", legnagyobb)
+    # print("LEG1:", legnagyobb)
     if legnagyobb != i:
         A[i], A[legnagyobb] = A[legnagyobb], A[i]
-        maximumKupacol(A, legnagyobb)
+        maximumKupacol(A, legnagyobb, kupacmeretA)
 
 
 # A = [None, 16, 4, 10, 14, 7, 9, 3, 2, 8, 1]
