@@ -1,16 +1,19 @@
-from maximumKupacol import maximumKupacol
+from maximumKupacol import *
 
 
 def maximumKupacotEpit(A):
-    kupacMeret = len(A)
-    for i in range(kupacMeret // 2, 0, -1):
-        maximumKupacol(A, i)
+    # A.insert(0,None)
+    kupacmeretA = len(A) - 1
+    for i in range(kupacmeretA // 2, 0, -1):
+        # print(A)
+        maximumKupacol(A, i, kupacmeretA)
+    # A.pop(0)
 
-
-# A = [8, 2, 1, 5, 6, 9, 4, 3, 7]
-# maximumKupacotEpit1(A)
+# A = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
+# maximumKupacotEpit(A)
 # print(A)
 #
-# A = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
-# maximumKupacotEpit1(A)
+# A = [8, 2, 1, 5, 6, 9, 4, 3, 7]
+#
+# maximumKupacotEpit(A)
 # print(A)

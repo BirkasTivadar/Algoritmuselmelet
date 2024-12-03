@@ -2,16 +2,18 @@ from maximumKupacotEpit import *
 
 
 def kupacRendezes(A):
+    A.insert(0, None)
     maximumKupacotEpit(A)
-    kupacmeretA = len(A)
-    for i in range(kupacmeretA - 1, 1, -1):
-        print(A[0])
-        A[0], A[i] = A[i], A[0]
+    kupacmeretA = len(A) - 1
+    for i in range(len(A) - 1, 0, -1):
+        A[1], A[i] = A[i], A[1]
         kupacmeretA -= 1
-        maximumKupacol(A, i)
+        maximumKupacol(A, 1, kupacmeretA)
+
+    A.pop(0)
 
 
-A = [8, 2, 1, 5, 6, 9, 4, 3, 7]
+A = [16, 4, 10, 14, 7, 9, 3, 2, 8, 1]
 
 kupacRendezes(A)
 print(A)
